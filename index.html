@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Martín García Curto · Game Designer & Gameplay Programmer</title>
+  <meta name="description" content="Portfolio de Martín García Curto, Game Designer y Gameplay Programmer especializado en Unity y C#.">
+  <meta name="theme-color" content="#0D0E12">
+
+  <!-- Vista previa al compartir el enlace -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Martín García Curto · Game Designer & Gameplay Programmer">
+  <meta property="og:description" content="Unity · C# · Diseño de mecánicas y gameplay.">
+  <meta property="og:url" content="https://martingc-dev.github.io/">
+  <meta property="og:image" content="https://martingc-dev.github.io/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Principal">
+      <a class="nav__logo" href="#top" aria-label="Inicio">MGC<span class="accent">.</span></a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#premios">Premios</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto" class="nav__cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 1. PORTADA ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__status reveal">
+            <span class="dot" aria-hidden="true"></span>
+            Actualmente en <strong>Super Monkey Studio</strong>
+          </p>
+
+          <h1 class="hero__title reveal" id="hero-title">
+            Martín<br>García <span class="accent">Curto</span>
+          </h1>
+
+          <p class="hero__role reveal">
+            Game Designer <span class="sep" aria-hidden="true">/</span> Gameplay Programmer
+          </p>
+
+          <!-- Frase alternativa guardada:
+               Del documento de diseño al código jugable, en Unity y C#. -->
+          <p class="hero__tagline reveal">
+            Game designer que programa.<br>
+            Programador que piensa en el jugador.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="#proyectos">
+              Ver proyectos
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="assets/cv/Martin-Garcia-Curto-CV.pdf" download>
+              Descargar CV
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+            </a>
+            <a class="btn btn--link" href="#contacto">Contacto</a>
+          </div>
+
+          <ul class="hero__facts reveal" aria-label="Datos rápidos">
+            <li><span class="mono">Motor</span>Unity · C#</li>
+            <li><span class="mono">Proyectos</span>6 publicados</li>
+            <li><span class="mono">Premios</span>2 game jams</li>
+          </ul>
+        </div>
+
+        <figure class="hero__photo reveal">
+          <div class="hero__photo-frame">
+            <img src="assets/img/profile.webp" alt="Foto de Martín García Curto"
+                 width="480" height="600" fetchpriority="high"
+                 onerror="this.parentElement.classList.add('is-missing'); this.remove();">
+            <span class="hero__photo-fallback" aria-hidden="true">MGC</span>
+          </div>
+          <figcaption class="mono">Unity · C# · Game Design</figcaption>
+        </figure>
+      </div>
+
+      <a class="hero__scroll" href="#experiencia" aria-label="Bajar a experiencia">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ 2. EXPERIENCIA (siguiente paso) ============ -->
+    <section class="section" id="experiencia" aria-label="Experiencia"></section>
+
+    <!-- ============ 3–4. PROYECTOS (se rellenan desde js/projects.js) ============ -->
+    <section class="section" id="proyectos" aria-label="Proyectos"></section>
+
+    <!-- ============ 5. PREMIOS ============ -->
+    <section class="section" id="premios" aria-label="Premios"></section>
+
+    <!-- ============ 6. HABILIDADES ============ -->
+    <section class="section" id="habilidades" aria-label="Habilidades"></section>
+
+    <!-- ============ 7. CONTACTO ============ -->
+    <section class="section" id="contacto" aria-label="Contacto"></section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Martín García Curto</p>
+    </div>
+  </footer>
+
+  <script src="js/projects.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
