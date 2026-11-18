@@ -69,8 +69,10 @@ _Última actualización: 2026-11-19_
 **Pendiente de que Martín aporte:**
 - Skuld: fecha de inicio y qué hace él (3–4 puntos).
 - Por proyecto: rol, tamaño del equipo, duración, qué hizo él, frase del juego, enlace a GitHub si existe.
-- Contacto: email público y URL de LinkedIn; confirmar GitHub `https://github.com/martingc-dev`.
+- Contacto: email público y URL de LinkedIn.
 - Carpeta `assets`: foto, CV en PDF, portadas y GIF/vídeos de los juegos, `og-image.png`. (Mientras falte la foto se muestran las iniciales "MGC".)
+
+**Cuenta de GitHub:** usuario cambiado de `mrlegotl` a `martingc-dev` (2026-11-19) para que la web quede en `martingc-dev.github.io`. GitHub: `https://github.com/martingc-dev`. Su itch.io sigue siendo `mrlegotl`. El repo debe ser **público** (Pages en cuenta gratuita).
 
 ## Vista previa local
 Abrir `index.html` como archivo no carga bien; usar un servidor:

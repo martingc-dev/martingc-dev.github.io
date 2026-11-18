@@ -26,7 +26,7 @@ window.SITE = {
   contact: {
     email: "",                                   // TODO: email público de contacto
     linkedin: "",                                // TODO: URL de tu perfil
-    github: "https://github.com/martingc-dev",   // TODO: confirmar
+    github: "https://github.com/martingc-dev",
     itch: "https://mrlegotl.itch.io"
   }
 };
