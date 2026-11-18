@@ -62,6 +62,8 @@ Campos de un proyecto: `slug, title, featured, date, genre, role, team, duration
 ## Estado actual
 _Última actualización: 2026-11-19_
 
+**Publicado:** repo público `martingc-dev/martingc-dev.github.io`, Pages desde `main` / `(root)`. En línea en https://martingc-dev.github.io (verificado 2026-11-19).
+
 **Hecho:** base del sitio (header fijo, menú móvil, footer, tokens CSS, animaciones) y portada completa. Datos de los 6 proyectos en `js/projects.js` con huecos `TODO`.
 
 **Siguiente paso:** sección 2, Experiencia (Super Monkey Studio / Skuld).
