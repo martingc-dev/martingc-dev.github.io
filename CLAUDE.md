@@ -9,6 +9,7 @@ Se publica en GitHub Pages: https://martingc-dev.github.io
 Que un reclutador entienda en menos de 30 segundos quién es, qué sabe hacer y qué hizo él en cada proyecto.
 
 ## Forma de trabajar (importante)
+- **Martín quiere aprender HTML/CSS/JS escribiendo él el código** (desde 2026-11-20). Claude actúa de tutor: explica el concepto, propone el ejercicio, revisa lo que Martín escribe y da pistas. **No escribir el código por él** salvo que lo pida expresamente. La base y la portada actuales las escribió Claude.
 - Se avanza **sección por sección**: construir una, enseñarla, esperar aprobación o cambios, y solo entonces pasar a la siguiente.
 - Al proponer textos: dar una lista corta de opciones + una recomendación razonada.
 - Si Martín descarta una opción pero quiere conservarla, guardarla como comentario HTML junto al texto elegido.
@@ -34,8 +35,9 @@ Campos de un proyecto: `slug, title, featured, date, genre, role, team, duration
 `featured: true` → destacados (grande); `false` → tarjetas pequeñas. Enlace vacío = botón oculto.
 
 ## Dirección visual (aprobada)
-- Tema oscuro. Fondo `#0D0E12`, superficie `#16181F`, borde `#262A35`, texto `#ECEDEF`, secundario `#9AA0AC`.
-- **Único acento: `#FF6B2C`** (naranja fuego).
+- **Paleta inspirada en Skuld** (cambiada el 2026-11-20; la naranja anterior se descartó porque «parecía de Claude»). Inspirada, no copiada: no usar su marca tal cual.
+- Fondo `#071017`, superficie `#0E1A22`, superficie-2 `#13232D`, borde `#1C2C36`, texto `#E9F1F2`, secundario `#8FA3AC`.
+- **Único acento: `#2EE6A8`** (verde jade; en `rgb()`: `46 230 168`). Texto sobre el acento: `#04130E`. No usar naranja ni dorado.
 - Tipografías (Google Fonts): **Unbounded** (títulos), **Inter** (texto), **JetBrains Mono** (etiquetas/datos).
 - Animaciones sutiles al hacer scroll (clase `.reveal`).
 - Tarjetas de proyecto: imagen fija; la animación se carga y reproduce al pasar el ratón. En móvil, se reproduce al entrar en pantalla. Preferir WebM/MP4 a GIF (aceptar ambos).
@@ -63,6 +65,8 @@ Campos de un proyecto: `slug, title, featured, date, genre, role, team, duration
 _Última actualización: 2026-11-19_
 
 **Publicado:** repo público `martingc-dev/martingc-dev.github.io`, Pages desde `main` / `(root)`. En línea en https://martingc-dev.github.io (verificado 2026-11-19).
+
+**Ejercicios de Martín hechos:** 1) cambiar la paleta (variables CSS, hex → rgb, SVG como texto) ✅
 
 **Hecho:** base del sitio (header fijo, menú móvil, footer, tokens CSS, animaciones) y portada completa. Datos de los 6 proyectos en `js/projects.js` con huecos `TODO`.
 

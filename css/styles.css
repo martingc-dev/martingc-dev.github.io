@@ -4,15 +4,15 @@
 
 /* ---------- Tokens ---------- */
 :root {
-  --bg:        #0D0E12;
-  --surface:   #16181F;
-  --surface-2: #1C1F28;
-  --border:    #262A35;
-  --text:      #ECEDEF;
-  --muted:     #9AA0AC;
-  --accent:    #FF6B2C;
-  --accent-ink:#0D0E12;              /* texto sobre el acento */
-  --accent-soft: rgb(255 107 44 / .14);
+  --bg:        #071017;
+  --surface:   #0E1A22;
+  --surface-2: #13232D;
+  --border:    #1C2C36;
+  --text:      #E9F1F2;
+  --muted:     #8FA3AC;
+  --accent:    #2EE6A8;
+  --accent-ink:#04130E;              /* texto sobre el acento */
+  --accent-soft: rgb(46 230 168/ .14);
 
   --font-display: "Unbounded", system-ui, sans-serif;
   --font-body:    "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -82,7 +82,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   border-bottom: 1px solid transparent;
 }
 .site-header.is-scrolled {
-  background: rgb(13 14 18 / .8);
+  background: rgb(7 16 23 / .8);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom-color: var(--border);
@@ -144,7 +144,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .hero__glow {
   position: absolute; z-index: -1;
   width: 60vmax; height: 60vmax; right: -20vmax; top: -15vmax;
-  background: radial-gradient(circle, rgb(255 107 44 / .22), transparent 60%);
+  background: radial-gradient(circle, rgb(46 230 168 / .22), transparent 60%);
   filter: blur(20px);
   pointer-events: none;
 }
@@ -167,13 +167,13 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .hero__status strong { color: var(--text); font-weight: 600; }
 .dot {
   width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
-  box-shadow: 0 0 0 0 rgb(255 107 44 / .6);
+  box-shadow: 0 0 0 0 rgb(46 230 168 / .6);
   animation: pulse 2.2s infinite;
 }
 @keyframes pulse {
-  0%   { box-shadow: 0 0 0 0 rgb(255 107 44 / .55); }
-  70%  { box-shadow: 0 0 0 9px rgb(255 107 44 / 0); }
-  100% { box-shadow: 0 0 0 0 rgb(255 107 44 / 0); }
+  0%   { box-shadow: 0 0 0 0 rgb(46 230 168 / .55); }
+  70%  { box-shadow: 0 0 0 9px rgb(46 230 168 / 0); }
+  100% { box-shadow: 0 0 0 0 rgb(46 230 168 / 0); }
 }
 
 .hero__title {
@@ -227,7 +227,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .hero__photo-frame::after {
   content: ""; position: absolute; inset: 0;
   border-radius: inherit;
-  box-shadow: inset 0 -120px 80px -60px rgb(13 14 18 / .7);
+  box-shadow: inset 0 -120px 80px -60px rgb(7 16 23 / .7);
   pointer-events: none;
 }
 /* marco de acento desplazado */
