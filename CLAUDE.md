@@ -9,7 +9,7 @@ Se publica en GitHub Pages: https://martingc-dev.github.io
 Que un reclutador entienda en menos de 30 segundos quién es, qué sabe hacer y qué hizo él en cada proyecto.
 
 ## Forma de trabajar (importante)
-- **Martín quiere aprender HTML/CSS/JS escribiendo él el código** (desde 2026-11-20). Claude actúa de tutor: explica el concepto, propone el ejercicio, revisa lo que Martín escribe y da pistas. **No escribir el código por él** salvo que lo pida expresamente. La base y la portada actuales las escribió Claude.
+- **Martín quiere aprender HTML/CSS/JS escribiendo él el código** (desde 2026-11-20). Claude actúa de tutor: explica el concepto, propone el ejercicio, revisa lo que Martín escribe y da pistas. **No escribir el código por él** salvo que lo pida expresamente. La base y la portada actuales las escribió Claude; Martín decidió **mantenerlas** (no empezar de cero) y escribir él todo lo demás. Antes de su primera sección, Claude le explica el código de la portada.
 - Se avanza **sección por sección**: construir una, enseñarla, esperar aprobación o cambios, y solo entonces pasar a la siguiente.
 - Al proponer textos: dar una lista corta de opciones + una recomendación razonada.
 - Si Martín descarta una opción pero quiere conservarla, guardarla como comentario HTML junto al texto elegido.
@@ -66,7 +66,11 @@ _Última actualización: 2026-11-19_
 
 **Publicado:** repo público `martingc-dev/martingc-dev.github.io`, Pages desde `main` / `(root)`. En línea en https://martingc-dev.github.io (verificado 2026-11-19).
 
-**Ejercicios de Martín hechos:** 1) cambiar la paleta (variables CSS, hex → rgb, SVG como texto) ✅
+**Ejercicios de Martín hechos:** 1) cambiar la paleta (variables CSS, hex → rgb, SVG como texto) ✅ · Lección 1 (etiquetas, class, id/anclas, jerarquía h1/h2) ✅ · 2) HTML de Experiencia, escrito a mano en `index.html` (no desde `data.js`) ✅ — lista de logros de Skuld cerrada (6 puntos, verbo + qué + resultado, `<strong>` en la parte clave). Pendiente confirmar si Martín también programó torretas y bendiciones; si es así, cambiar el punto 1 a «Diseño y programo…».
+
+**Siguiente ejercicio:** 3) CSS de la tarjeta `.xp-card` de Experiencia.
+
+Skuld: Martín está en Super Monkey Studio desde **2024**.
 
 **Hecho:** base del sitio (header fijo, menú móvil, footer, tokens CSS, animaciones) y portada completa. Datos de los 6 proyectos en `js/projects.js` con huecos `TODO`.
 
