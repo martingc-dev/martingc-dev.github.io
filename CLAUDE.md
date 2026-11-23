@@ -72,7 +72,9 @@ _Última actualización: 2026-11-23_
 
 4) Estilo general `.section h2` ✅ (2026-11-23): aprendió clase (`.x`) vs etiqueta (`x`), selector descendiente, `clamp()`, `rem` vs `em`. Comprobado: 44.8px en escritorio, 30.4px en móvil (Skuld 24px), sin scroll horizontal.
 
-**Siguiente ejercicio:** 5) retoques de la tarjeta y empezar la sección 3, Proyectos destacados. Pendientes menores de la tarjeta: sangría de `.xp-card`, `padding` más pequeño en móvil (pista: `clamp()` como en `.section`), línea vacía dentro de `.xp__list`, línea en blanco entre `.section` y `.section h2`.
+5) Retoques de la tarjeta ✅ (2026-11-23): sangría, `padding: clamp(20px, 4vw, 32px)` (20px móvil / 32px escritorio, comprobado), líneas en blanco entre reglas.
+
+**Siguiente ejercicio:** 6) empezar la sección 3, Proyectos destacados. (Detalles mínimos opcionales: espacio tras la coma en el `clamp` de `.xp-card`, línea en blanco antes del comentario «Experiencia».)
 
 **Vista previa:** en este PC no hay Python; se usa un servidor PowerShell desde `.claude/launch.json` (el script está en la carpeta temporal de la sesión; si desaparece, hay que regenerarlo).
 
