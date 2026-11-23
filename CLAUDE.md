@@ -62,19 +62,23 @@ Campos de un proyecto: `slug, title, featured, date, genre, role, team, duration
 - Frase de la portada: «Game designer que programa. / Programador que piensa en el jugador.» Alternativa guardada en un comentario de `index.html`: «Del documento de diseño al código jugable, en Unity y C#.»
 
 ## Estado actual
-_Última actualización: 2026-11-19_
+_Última actualización: 2026-11-23_
 
 **Publicado:** repo público `martingc-dev/martingc-dev.github.io`, Pages desde `main` / `(root)`. En línea en https://martingc-dev.github.io (verificado 2026-11-19).
 
 **Ejercicios de Martín hechos:** 1) cambiar la paleta (variables CSS, hex → rgb, SVG como texto) ✅ · Lección 1 (etiquetas, class, id/anclas, jerarquía h1/h2) ✅ · 2) HTML de Experiencia, escrito a mano en `index.html` (no desde `data.js`) ✅ — lista de logros de Skuld cerrada (6 puntos, verbo + qué + resultado, `<strong>` en la parte clave). Pendiente confirmar si Martín también programó torretas y bendiciones; si es así, cambiar el punto 1 a «Diseño y programo…».
 
-**Siguiente ejercicio:** 3) CSS de la tarjeta `.xp-card` de Experiencia.
+3) CSS de la tarjeta de Experiencia ✅ (2026-11-23): clases BEM `xp__meta` (+ `mono`), `xp__title`, `xp__desc`, `xp__role`, `xp__list`; aprendió `font-family` vs `color`, `li + li`, especificidad (clase > etiqueta, para recuperar los puntos que quita la regla global `ul`), `::marker`. Comprobado a 1366px y 375px sin scroll horizontal.
+
+**Siguiente ejercicio:** 4) estilo general de los `h2` de sección (ahora no tienen estilo y miden igual que «Skuld»). Pendientes menores de la tarjeta: sangría de `.xp-card`, `padding` más pequeño en móvil (pista: `clamp()` como en `.section`), línea vacía dentro de `.xp__list`.
+
+**Vista previa:** en este PC no hay Python; se usa un servidor PowerShell desde `.claude/launch.json` (el script está en la carpeta temporal de la sesión; si desaparece, hay que regenerarlo).
 
 Skuld: Martín está en Super Monkey Studio desde **2024**.
 
 **Hecho:** base del sitio (header fijo, menú móvil, footer, tokens CSS, animaciones) y portada completa. Datos de los 6 proyectos en `js/projects.js` con huecos `TODO`.
 
-**Siguiente paso:** sección 2, Experiencia (Super Monkey Studio / Skuld).
+**Siguiente paso:** cerrar Experiencia (título `h2` general) y después sección 3, Proyectos destacados.
 
 **Pendiente de que Martín aporte:**
 - Skuld: fecha de inicio y qué hace él (3–4 puntos).
