@@ -70,7 +70,9 @@ _Última actualización: 2026-11-23_
 
 3) CSS de la tarjeta de Experiencia ✅ (2026-11-23): clases BEM `xp__meta` (+ `mono`), `xp__title`, `xp__desc`, `xp__role`, `xp__list`; aprendió `font-family` vs `color`, `li + li`, especificidad (clase > etiqueta, para recuperar los puntos que quita la regla global `ul`), `::marker`. Comprobado a 1366px y 375px sin scroll horizontal.
 
-**Siguiente ejercicio:** 4) estilo general de los `h2` de sección (ahora no tienen estilo y miden igual que «Skuld»). Pendientes menores de la tarjeta: sangría de `.xp-card`, `padding` más pequeño en móvil (pista: `clamp()` como en `.section`), línea vacía dentro de `.xp__list`.
+4) Estilo general `.section h2` ✅ (2026-11-23): aprendió clase (`.x`) vs etiqueta (`x`), selector descendiente, `clamp()`, `rem` vs `em`. Comprobado: 44.8px en escritorio, 30.4px en móvil (Skuld 24px), sin scroll horizontal.
+
+**Siguiente ejercicio:** 5) retoques de la tarjeta y empezar la sección 3, Proyectos destacados. Pendientes menores de la tarjeta: sangría de `.xp-card`, `padding` más pequeño en móvil (pista: `clamp()` como en `.section`), línea vacía dentro de `.xp__list`, línea en blanco entre `.section` y `.section h2`.
 
 **Vista previa:** en este PC no hay Python; se usa un servidor PowerShell desde `.claude/launch.json` (el script está en la carpeta temporal de la sesión; si desaparece, hay que regenerarlo).
 
@@ -78,7 +80,7 @@ Skuld: Martín está en Super Monkey Studio desde **2024**.
 
 **Hecho:** base del sitio (header fijo, menú móvil, footer, tokens CSS, animaciones) y portada completa. Datos de los 6 proyectos en `js/projects.js` con huecos `TODO`.
 
-**Siguiente paso:** cerrar Experiencia (título `h2` general) y después sección 3, Proyectos destacados.
+**Siguiente paso:** sección 3, Proyectos destacados (Experiencia terminada salvo retoques menores).
 
 **Pendiente de que Martín aporte:**
 - Skuld: fecha de inicio y qué hace él (3–4 puntos).
