@@ -10,6 +10,7 @@ Que un reclutador entienda en menos de 30 segundos quién es, qué sabe hacer y 
 
 ## Forma de trabajar (importante)
 - **Martín quiere aprender HTML/CSS/JS escribiendo él el código** (desde 2026-11-20). Claude actúa de tutor: explica el concepto, propone el ejercicio, revisa lo que Martín escribe y da pistas. **No escribir el código por él** salvo que lo pida expresamente. La base y la portada actuales las escribió Claude; Martín decidió **mantenerlas** (no empezar de cero) y escribir él todo lo demás. Antes de su primera sección, Claude le explica el código de la portada.
+- **Erratas, espacios, sangría y guiones los corrige Claude directamente** (pedido por Martín el 2026-11-24) y le dice qué ha cambiado. Los errores de concepto (estructura, etiquetas, clases, CSS) se los explica para que los corrija él.
 - Se avanza **sección por sección**: construir una, enseñarla, esperar aprobación o cambios, y solo entonces pasar a la siguiente.
 - Al proponer textos: dar una lista corta de opciones + una recomendación razonada.
 - Si Martín descarta una opción pero quiere conservarla, guardarla como comentario HTML junto al texto elegido.
@@ -74,9 +75,16 @@ _Última actualización: 2026-11-23_
 
 5) Retoques de la tarjeta ✅ (2026-11-23): sangría, `padding: clamp(20px, 4vw, 32px)` (20px móvil / 32px escritorio, comprobado), líneas en blanco entre reglas.
 
-**Siguiente ejercicio:** 6) empezar la sección 3, Proyectos destacados. (Detalles mínimos opcionales: espacio tras la coma en el `clamp` de `.xp-card`, línea en blanco antes del comentario «Experiencia».)
+**Elementals (datos cerrados 2026-11-24):** TFM del Máster EVAD, en solitario, 3–4 meses, Unity · C# · ScriptableObjects. Frase: «Combate por turnos con cartas, inspirado en Slay the Spire y construido desde cero en Unity como Trabajo Fin de Máster.» Logros: 1) diseñó y programó el juego en solitario (TFM); 2) combate por turnos con cartas: mazo, mano, energía, turnos enemigos; 3) sistema de cartas y efectos de estado (quemadura, vulnerable, bloqueo) con ScriptableObjects; 4) mazos iniciales de guardianes y enemigos con comportamientos distintos (p. ej. que se curan). Créditos: «Arte: assets de terceros (itch.io)». GitHub: `https://github.com/martingc-dev/TFM_ElementalGuardians` — ⚠️ Martín lo hizo público temporalmente y piensa volver a hacerlo privado al terminar la sección: **si lo hace, hay que quitar el enlace de GitHub** (daría 404).
 
-**Vista previa:** en este PC no hay Python; se usa un servidor PowerShell desde `.claude/launch.json` (el script está en la carpeta temporal de la sesión; si desaparece, hay que regenerarlo).
+**Elementals, comprobado en el proyecto final (2026-11-24):** el proyecto final es `../TFM_ProyectoMaster2D` (el repo público `TFM_ElementalGuardians` es un **prototipo antiguo**, sin mapa ni tienda). Implementado: mapa ramificado procedural (`Scripts/Map`, programado por Martín **siguiendo un tutorial de YouTube** → decirlo así), tienda, tesoro, descanso, logros, notas de tutorial, tamaño de texto. El filtro de daltonismo es un **asset comprado** (`Assets/ColorblindFilter`, «Thank you for purchasing») → decir «integré», no «programé», y no publicar ese proyecto. **Decidido:** sin botón de GitHub; en su lugar «Leer GDD» → `assets/projects/elementals/GDD_Elementals.pdf` (Martín puede volver a poner privado el repo). Cuando se haga el JS (6c), añadir un campo `gdd` a los enlaces de `projects.js` (PDF corregido y comprimido ✅ en `assets/projects/elementals/GDD_Elementals.pdf`, 832 KB, 26 págs.).
+
+6a) HTML de la tarjeta de Elementals ✅ (2026-11-24): `<article class="project reveal">` con `project__media` (img) + `project__body` (meta, title, pitch, facts, tags, list, credit, links). Aprendió `<article>`, `<img>` (src/alt/loading), `target="_blank" rel="noopener"`, rutas relativas, **`<a>` para navegar vs `<button>` para acciones**. Parte del HTML apareció escrito sin que Martín lo escribiera (¿Copilot/otra sesión?); se le recomendó desactivar Copilot mientras aprende.
+6b) CSS de la tarjeta ✅ (2026-11-24): grid (`fr`, `gap`, `align-items`), `aspect-ratio`, `object-fit`, `overflow`, media query a 860px, flexbox (`flex-wrap`, `gap` doble), etiquetas en píldora (`border-radius: 999px`); reutilizó por su cuenta el patrón de `.xp__list`. Comprobado a 1366px (2 columnas) y 375px (1 columna, sin scroll horizontal).
+
+**Siguiente ejercicio:** 6c) JavaScript: generar las tarjetas desde `js/projects.js` (añadir campo `gdd` a `links`), y luego datos de Dissonant y Ludophatik. Falta la captura `assets/projects/elementals/cover.webp`. (Detalles mínimos opcionales: espacio tras la coma en el `clamp` de `.xp-card`, línea en blanco antes del comentario «Experiencia».)
+
+**Vista previa:** en el PC de casa hay Python (`python -m http.server 5500`); en el de la oficina no hay Python y se usa un servidor PowerShell desde `.claude/launch.json` (el script está en la carpeta temporal de la sesión; si desaparece, hay que regenerarlo).
 
 Skuld: Martín está en Super Monkey Studio desde **2024**.
 
